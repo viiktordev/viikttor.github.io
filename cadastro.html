@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+    <title>Crie sua Hello conta</title>
+</head>
+
+<body id="cadastro">
+    <header>
+        <div id="banner">
+            <h1>
+                <img src="img/logo-helloPizza.png" alt="Logo hello Pizza">
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <form action="" method="POST" id="form">
+        <fieldset>
+            <legend>Conta</legend>
+            <div class="esquerda">
+                <label for="email">Email:</label>
+                <input type="email" name="email" size="100" required />
+            </div>
+            <div class="direita">
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" required />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div class="esquerda">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" placeholder="Ex: Bruno" required />
+            </div>
+            <div class="direita">
+                <label for="telefone">Telefone:</label>
+                <input type="text" name="telefone" placeholder="Ex: (11)99999-9999" pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}"
+                    required />
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <div id="rua">
+                <label for="rua">Rua:</label>
+                <input type="text" name="rua" required />
+            </div>
+            <div class="esquerda">
+                <label for="numero">Numero:</label>
+                <input type="number" name="num-casa" min="1" max="9999" required />
+            </div>
+            <div class="direita">
+                <label for="complemento">Complemento:</label>
+                <input type="text" name="complemento" />
+            </div>
+            <div class="esquerda">
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="cidade" required />
+            </div>
+            <div class="direita">
+                <label for="estado">Estado:</label>
+                <select name="estados">
+                    <option value=""></option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="AC">Acre</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Anuncio</legend>
+            <div>
+                <label for="como conheceu o hello pizza?">Como conheceu o Hello Pizza?</label>
+                <textarea maxlength="256" name="como-conheceu" placeholder="Conta pra gente como você nos conheceu..."></textarea>
+            </div>
+            <div>
+                <input type="checkbox" name="deseja-anuncio" checked />
+                <label for="desejo receber informações por email">Desejo receber informações por email</label>
+            </div>
+        </fieldset>
+        <input type="submit" value="Enviar" />
+    </form>
+    <footer>
+        <div id="footer">
+            <a href="#" id="logo-hellopizza">
+                <img src="img/logo-helloPizza.png">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
